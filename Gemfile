@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -10,7 +12,7 @@ gemspec
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
-gem 'rails', '~> 6.0.0.rc1'
+gem 'rails', '> 6.0'
 
 group :development do
   gem 'better_errors'
@@ -18,6 +20,7 @@ group :development do
   gem 'htmlbeautifier'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
   gem 'sass-rails'
 end
 

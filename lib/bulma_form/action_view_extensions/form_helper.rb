@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BulmaForm
   module ActionViewExtensions
     # This module creates BulmaForm wrapper around the default form_with method.
@@ -12,7 +14,7 @@ module BulmaForm
         options.reverse_merge!(builder: BulmaForm::FormBuilder)
 
         with_bulma_form_field_error_proc do
-          form_with(options, &block)
+          form_with(**options, &block)
         end
       end
 

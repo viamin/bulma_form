@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bulma_form/engine'
 
 require 'bulma_form/action_view_extensions/form_helper'

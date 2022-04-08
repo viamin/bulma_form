@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
@@ -23,5 +25,5 @@ Gem::Specification.new do |spec|
   # spec.add_dependency 'actionpack', '>= 5.0'
   # spec.add_dependency 'actionview', '>= 5.0'
 
-  spec.add_development_dependency 'rspec-rails', '~> 3.8'
+  spec.add_development_dependency 'rspec-rails', '> 3'
 end
