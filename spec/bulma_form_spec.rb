@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'BulmaForm::ActionViewExtensions::FormHelper.bulma_form_for' do
@@ -8,8 +10,8 @@ describe 'BulmaForm::ActionViewExtensions::FormHelper.bulma_form_for' do
 
   it 'renders default-style form' do
     expected = <<-HTML.strip_heredoc
-      <form action="/users" accept-charset="UTF-8" data-remote="true" method="post">
-        #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
+      <form action="/users" accept-charset="UTF-8" method="post">
+        #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '7'}
       </form>
     HTML
 

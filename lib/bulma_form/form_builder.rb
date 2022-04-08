@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BulmaForm
   class FormBuilder < ActionView::Helpers::FormBuilder
     attr_reader :layout

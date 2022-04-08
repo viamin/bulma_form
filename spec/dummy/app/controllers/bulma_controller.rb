@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BulmaController < ApplicationController
   def form
     @user = User.new(email: 'hello@')

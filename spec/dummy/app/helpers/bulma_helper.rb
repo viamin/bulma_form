@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BulmaHelper
   def form_with_source(&block)
     form_html = capture(&block)
